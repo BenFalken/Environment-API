@@ -2,11 +2,11 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred = credentials.Certificate('/Users/benfalken/Desktop/unclos-project-firebase-adminsdk-3c19p-858bc4c03e.json')
+cred = credentials.Certificate('Your-key-here.json')
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://unclos-project.firebaseio.com'
+    'databaseURL': 'Your-url-here'
 })
 
 db = firestore.client()
