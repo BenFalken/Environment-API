@@ -7,7 +7,7 @@ class DataConverter:
         self.recordedCountries = {}
 
     def convertFiles(self):
-        absPath = '/Users/benfalken/Desktop/Environment-Project/Data/'
+        absPath = 'Your-project-pathway'
         totalBatches = 0
         for sheet in self.allFiles:
             with open(absPath+sheet, mode='r') as file:
